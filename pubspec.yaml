@@ -1,6 +1,6 @@
 name: RAL
 description: Runtime abstraction layer
-homepage: https://github.com/DisDis/params
+homepage: https://github.com/DisDis/RAL
 author: Igor Demyanov<igor.demyanov@gmail.com>
 version: 1.0.0
 
