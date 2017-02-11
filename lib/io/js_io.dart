@@ -24,3 +24,13 @@ JsObject _contextCreate() {
   });
   return result;
 }
+
+Function/*=F*/ allowInterop/*<F extends Function>*/(Function/*=F*/ f) {
+  //FIX IT
+  return f;
+}
+
+Function allowInteropCaptureThis(Function f) {
+  //FIX IT
+  return f;
+}
