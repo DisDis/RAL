@@ -14,6 +14,8 @@ class Window implements interface.Window {
   Location get location => _location;
 
   interface.Storage get localStorage => null;
+
+  void open(String url, String target, [String features]) => null;
 }
 
 class Location implements interface.Location{
