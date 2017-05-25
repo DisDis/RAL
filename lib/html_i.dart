@@ -6,6 +6,8 @@ Window get window => null;
 abstract class Window{
   Storage get localStorage;
   Location get location;
+
+  void open(String url, String target, [String features]);
 }
 
 abstract class Storage implements Map<String, String> {
