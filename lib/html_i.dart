@@ -5,6 +5,7 @@ Window get window => null;
 
 abstract class Window{
   Storage get localStorage;
+  Storage get sessionStorage;
   Location get location;
 
   void open(String url, String target, [String features]);

@@ -15,6 +15,8 @@ class Window implements interface.Window {
 
   interface.Storage get localStorage => null;
 
+  interface.Storage get sessionStorage => null;
+
   void open(String url, String target, [String features]) => null;
 }
 
