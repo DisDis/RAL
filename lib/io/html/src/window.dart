@@ -1,4 +1,5 @@
 import 'package:RAL/html_i.dart' as interface;
+import 'package:RAL/io/html/src/storage.dart';
 
 class Window implements interface.Window {
   static final Window _window = new Window._internal();
@@ -13,9 +14,9 @@ class Window implements interface.Window {
 
   Location get location => _location;
 
-  interface.Storage get localStorage => null;
+  interface.Storage get localStorage => new Storage();
 
-  interface.Storage get sessionStorage => null;
+  interface.Storage get sessionStorage => new Storage();
 
   void open(String url, String target, [String features]) => null;
 }
