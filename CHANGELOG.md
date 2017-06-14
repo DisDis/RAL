@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.0
+- Add window.sessionStorage
+
 ## 1.2.0
 - Add window.open method
 
