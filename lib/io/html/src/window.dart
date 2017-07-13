@@ -26,4 +26,18 @@ class Location implements interface.Location{
   String get hash => '';
 
   String get host => 'localhost';
+
+  String get hostname => '';
+
+  String get href => '';
+
+  String get origin =>'';
+
+  String get pathname => '';
+
+  String get port => '';
+
+  String get protocol => '';
+
+  String get search => '';
 }
