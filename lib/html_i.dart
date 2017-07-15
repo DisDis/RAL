@@ -5,7 +5,10 @@ Window get window => null;
 
 abstract class Window{
   Storage get localStorage;
+  Storage get sessionStorage;
   Location get location;
+
+  void open(String url, String target, [String features]);
 }
 
 abstract class Storage implements Map<String, String> {
@@ -93,8 +96,16 @@ abstract class File{
 }
 
 abstract class Location{
-  String get host;
   String get hash;
+  String get host;
+  String get hostname;
+  String get href;
+  String get origin;
+  String get pathname;
+  String get port;
+  String get protocol;
+  String get search;
+
 }
 
 class HttpRequest {

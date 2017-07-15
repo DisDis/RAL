@@ -1,8 +1,15 @@
 # Changelog
 
-## 1.1.1
+## 1.4.0
 
-- added stub allowInterop, allowInteropCaptureThis
+- Add allowInterop, allowInteropCaptureThis
+- Add Window.Location interface
+
+## 1.3.0
+- Add window.sessionStorage
+
+## 1.2.0
+- Add window.open method
 
 ## 1.0.0
 
