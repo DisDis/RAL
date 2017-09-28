@@ -3,10 +3,19 @@ library platform.interface.html;
 import 'dart:async';
 Window get window => null;
 
+Element querySelector(String selectors){
+   throw new UnimplementedError();
+}
+
 abstract class Window{
   Storage get localStorage;
   Storage get sessionStorage;
   Location get location;
+  final double devicePixelRatio;
+  Stream<Event> onResize;
+
+  Future<num> get animationFrame => 0;
+
 
   void open(String url, String target, [String features]);
 }
@@ -222,8 +231,22 @@ class MessageEvent extends Event{
 }
 
 class Element extends Node{
+    ElementStream<MouseEvent> onMouseDown;
+    ElementStream<MouseEvent> onMouseMove;
+    ElementStream<MouseEvent> onMouseLeave;
+    ElementStream<MouseEvent> onMouseUp;
+    ElementStream<Event>      onScroll;
+    ElementStream<WheelEvent> onMouseWheel;
 
+    int scrollTop;
+    int clientWidth;
+    int clientHeight;
+    int offsetWidth;
+    int scrollLeft;
+
+    CssStyleDeclaration style;
 }
+
 
 class Node{
 
@@ -235,4 +258,160 @@ class EventTarget {
 
 class MessagePort extends EventTarget {
 
+}
+
+class UIEvent extends Event {
+}
+
+class MouseEvent extends UIEvent {
+    Point offset;
+    bool ctrlKey;
+    bool altKey;
+    bool shiftKey;
+}
+
+class WheelEvent extends MouseEvent {
+    num deltaY;
+    num deltaX;
+    int deltaMode;
+}
+
+class TextMetrics{
+    num width;
+}
+
+class CanvasPattern{
+}
+
+class CanvasRenderingContext2D {
+    Object fillStyle;
+    Object strokeStyle;
+    num lineWidth;
+    String textAlign;
+    String font;
+    String lineCap;
+    String lineJoin;
+    num miterLimit;
+
+    double backingStorePixelRatio;
+
+    void beginPath(){
+        throw new UnimplementedError();
+    }
+
+    void scale(num x, num y){
+        throw new UnimplementedError();
+    }
+
+    void rect(num x, num y, num width, num height){
+        throw new UnimplementedError();
+    }
+
+    void clip(){
+        throw new UnimplementedError();
+    }
+
+    void save(){
+        throw new UnimplementedError();
+    }
+
+    void restore(){
+        throw new UnimplementedError();
+    }
+
+    void translate(num x, num y){
+        throw new UnimplementedError();
+    }
+
+    void   void clearRect(num x, num y, num width, num height){
+        throw new UnimplementedError();
+    }
+
+    void arc(num x, num y, num radius, num startAngle, num endAngle,
+      [bool anticlockwise = false]) {
+        throw new UnimplementedError();
+    }
+
+    void fill([String winding = 'nonzero']) {
+        throw new UnimplementedError();    
+    }
+
+    void stroke([Path2D path]){
+        throw new UnimplementedError();    
+    }
+
+    void fillRect(num x, num y, num width, num height){
+        throw new UnimplementedError();    
+    }
+
+    void strokeRect(num x, num y, num width, num height){
+        throw new UnimplementedError();    
+    }
+
+    void moveTo(num x, num y){
+        throw new UnimplementedError();    
+    }
+
+    void lineTo(num x, num y){
+        throw new UnimplementedError();    
+    }
+
+    void setLineDash(List<num> dash) {
+        throw new UnimplementedError();    
+    }
+
+    void fillText(String text, num x, num y, [num maxWidth]) {
+        throw new UnimplementedError();    
+    }
+
+    TextMetrics measureText(String text){
+        throw new UnimplementedError();    
+    }
+
+    void closePath(){
+        throw new UnimplementedError();    
+    }
+
+    void bezierCurveTo(num cp1x, num cp1y, num cp2x, num cp2y, num x, num y){
+        throw new UnimplementedError();    
+    }
+
+    CanvasPattern createPattern(Object image, String repetitionType){
+        throw new UnimplementedError();    
+    }
+}
+
+class HtmlElement extends Element {
+}
+ 
+class CssStyleDeclaration {
+    String width;
+    String height;
+    String backgroundColor;
+} 
+
+class CssClassSet {
+    bool remove(Object value){
+        throw new UnimplementedError();    
+    }
+
+    bool add(String value){
+        throw new UnimplementedError();    
+    }
+}
+
+class CanvasElement extends HtmlElement {
+    CanvasRenderingContext2D context2D;
+    CssStyleDeclaration style;
+    CssClassSet classes;
+
+    int width;
+    int height;
+
+    factory CanvasElement({int width, int height}) {
+        var e =  new CanvasElement();
+        if (width != null) e.width = width;
+        if (height != null) e.height = height;
+        return e;
+    }
 }
