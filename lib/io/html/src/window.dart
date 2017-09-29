@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:RAL/html_i.dart' as interface;
 import 'package:RAL/io/html/src/storage.dart';
 
@@ -19,6 +20,16 @@ class Window implements interface.Window {
   interface.Storage get sessionStorage => new Storage();
 
   void open(String url, String target, [String features]) => null;
+
+  @override
+  double devicePixelRatio;
+
+  @override
+  Stream<interface.Event> onResize;
+
+  // TODO: implement animationFrame
+  @override
+  Future<num> get animationFrame => null;
 }
 
 class Location implements interface.Location{

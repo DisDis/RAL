@@ -1,6 +1,7 @@
 library platform.interface.html;
 
 import 'dart:async';
+import 'dart:math';
 Window get window => null;
 
 Element querySelector(String selectors){
@@ -11,10 +12,10 @@ abstract class Window{
   Storage get localStorage;
   Storage get sessionStorage;
   Location get location;
-  final double devicePixelRatio;
+  double devicePixelRatio;
   Stream<Event> onResize;
 
-  Future<num> get animationFrame => 0;
+  Future<num> get animationFrame => new Future.value(0);
 
 
   void open(String url, String target, [String features]);
@@ -231,12 +232,12 @@ class MessageEvent extends Event{
 }
 
 class Element extends Node{
-    ElementStream<MouseEvent> onMouseDown;
-    ElementStream<MouseEvent> onMouseMove;
-    ElementStream<MouseEvent> onMouseLeave;
-    ElementStream<MouseEvent> onMouseUp;
-    ElementStream<Event>      onScroll;
-    ElementStream<WheelEvent> onMouseWheel;
+    Stream<MouseEvent> onMouseDown;
+    Stream<MouseEvent> onMouseMove;
+    Stream<MouseEvent> onMouseLeave;
+    Stream<MouseEvent> onMouseUp;
+    Stream<Event>      onScroll;
+    Stream<WheelEvent> onMouseWheel;
 
     int scrollTop;
     int clientWidth;
@@ -261,6 +262,7 @@ class MessagePort extends EventTarget {
 }
 
 class UIEvent extends Event {
+  UIEvent(): super("UIEvent");
 }
 
 class MouseEvent extends UIEvent {
@@ -281,6 +283,9 @@ class TextMetrics{
 }
 
 class CanvasPattern{
+}
+
+class Path2D{
 }
 
 class CanvasRenderingContext2D {
@@ -323,7 +328,7 @@ class CanvasRenderingContext2D {
         throw new UnimplementedError();
     }
 
-    void   void clearRect(num x, num y, num width, num height){
+    void clearRect(num x, num y, num width, num height){
         throw new UnimplementedError();
     }
 
