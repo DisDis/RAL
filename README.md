@@ -19,3 +19,6 @@ A simple usage example:
 Please file feature requests and bugs at the [issue tracker][tracker].
 
 [tracker]: http://example.com/issues/replaceme
+
+
+[![Build Status](https://travis-ci.org/EKibort/RAL.svg?branch=master)](https://travis-ci.org/EKibort/RAL)
