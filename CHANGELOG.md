@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.5.2
+- Fixed all hints of dart analyzer
+- Add .travis.yaml and Travis status to README
+- Suppress error with missing function "_fromBrowserObject(object);" in lib/io/js/src/js_object.dart
+
+## 1.5.1
+- Fixed bunch of dart errors 
+
+## 1.5.0
+- Add browser_detect_i with Browser
+- Add querySelector
+- Add to Window: devicePixelRatio, onResize, animationFrame
+- Add to Element: onMouseDown, onMouseMove, onMouseLeave, onMouseUp, onScroll, onMouseWhee, scrollTop, clientWidth, clientHeight, offsetWidth, scrollLeft, style
+- Add UIEvent, MouseEvent, WheelEvent, TextMetrics, CanvasPattern, CanvasRenderingContext2D , HtmlElement, CssStyleDeclaration, CssClassSet, CanvasElement
+
+
 ## 1.4.0
 
 - Add allowInterop, allowInteropCaptureThis

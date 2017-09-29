@@ -38,10 +38,12 @@ class JsObject {
    * `bool`, `num`, or `String`.
    */
   factory JsObject.fromBrowserObject(object) {
-    if (object is num || object is String || object is bool || object == null) {
+    //FIXME Need to implement this
+    /*if (object is num || object is String || object is bool || object == null) {
       throw new ArgumentError("object cannot be a num, string, bool, or null");
     }
-    return _fromBrowserObject(object);
+    return _fromBrowserObject(object);*/
+    throw new UnimplementedError();
   }
 
   /**
