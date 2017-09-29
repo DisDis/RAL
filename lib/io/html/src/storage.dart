@@ -4,7 +4,7 @@ class Storage implements interface.Storage{
 
   @override
   String operator [](Object key) {
-    // TODO: implement []
+    return "";
   }
 
   @override
@@ -24,12 +24,12 @@ class Storage implements interface.Storage{
 
   @override
   bool containsKey(Object key) {
-    // TODO: implement containsKey
+    return false;
   }
 
   @override
   bool containsValue(Object value) {
-    // TODO: implement containsValue
+    return false;
   }
 
   @override
@@ -55,12 +55,12 @@ class Storage implements interface.Storage{
 
   @override
   String putIfAbsent(String key, String ifAbsent()) {
-    // TODO: implement putIfAbsent
+    return "";
   }
 
   @override
   String remove(Object key) {
-    // TODO: implement remove
+    return "";
   }
 
   // TODO: implement values
