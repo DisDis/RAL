@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/EKibort/RAL.svg?branch=master)](https://travis-ci.org/EKibort/RAL)
+[![Build Status](https://travis-ci.org/DisDis/RAL.svg?branch=master)](https://travis-ci.org/DisDis/RAL)
 
 # RAL
 
