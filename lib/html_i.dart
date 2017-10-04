@@ -384,6 +384,10 @@ class CanvasRenderingContext2D {
     CanvasPattern createPattern(Object image, String repetitionType){
         throw new UnimplementedError();    
     }
+
+    void rotate(num angle){
+        throw new UnimplementedError();    
+    }
 }
 
 class HtmlElement extends Element {

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.3
+- Add CanvasRenderingContext2D.rotate
+
 ## 1.5.2
 - Fixed all hints of dart analyzer
 - Add .travis.yaml and Travis status to README
