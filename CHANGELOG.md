@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.5
+- Add Element.onDoubleClick
+- Add Document with onMouseDown, onMouseMove, onMouseLeave, onMouseUp, onMouseWheel, onDoubleClick
+- Add to Node: ownerDocument
+
 ## 1.5.4
 - Add Element.scrollHeight and Element.scrollWidth
 

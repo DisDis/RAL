@@ -238,6 +238,7 @@ class Element extends Node{
     Stream<MouseEvent> onMouseUp;
     Stream<Event>      onScroll;
     Stream<WheelEvent> onMouseWheel;
+    Stream<Event>      onDoubleClick;
 
     int scrollTop;
     int clientWidth;
@@ -250,9 +251,17 @@ class Element extends Node{
     CssStyleDeclaration style;
 }
 
+class Document extends Node {
+    Stream<MouseEvent> onMouseDown;
+    Stream<MouseEvent> onMouseMove;
+    Stream<MouseEvent> onMouseLeave;
+    Stream<MouseEvent> onMouseUp;
+    Stream<WheelEvent> onMouseWheel;
+    Stream<Event>      onDoubleClick;
+}
 
 class Node{
-
+    Document ownerDocument;
 }
 
 class EventTarget {
@@ -272,6 +281,7 @@ class MouseEvent extends UIEvent {
     bool ctrlKey;
     bool altKey;
     bool shiftKey;
+    Point screen;
 }
 
 class WheelEvent extends MouseEvent {
