@@ -244,6 +244,8 @@ class Element extends Node{
     int clientHeight;
     int offsetWidth;
     int scrollLeft;
+    int scrollHeight;
+    int scrollWidth;
 
     CssStyleDeclaration style;
 }
