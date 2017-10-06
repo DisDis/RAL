@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.4
+- Add Element.scrollHeight and Element.scrollWidth
+
 ## 1.5.3
 - Add CanvasRenderingContext2D.rotate
 
