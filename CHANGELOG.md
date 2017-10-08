@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.6
+- Add Element.focus()
+
 ## 1.5.5
 - Add Element.onDoubleClick
 - Add Document with onMouseDown, onMouseMove, onMouseLeave, onMouseUp, onMouseWheel, onDoubleClick

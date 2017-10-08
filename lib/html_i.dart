@@ -249,6 +249,10 @@ class Element extends Node{
     int scrollWidth;
 
     CssStyleDeclaration style;
+
+    void focus() {
+      throw new UnimplementedError();
+    }
 }
 
 class Document extends Node {
