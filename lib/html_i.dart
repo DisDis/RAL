@@ -433,10 +433,8 @@ class CanvasElement extends HtmlElement {
     int width;
     int height;
 
-    factory CanvasElement({int width, int height}) {
-        var e =  new CanvasElement();
-        if (width != null) e.width = width;
-        if (height != null) e.height = height;
-        return e;
+    CanvasElement({int width, int height, Document ownerDocument}) {
+      if (width != null) width = width;
+      if (height != null) height = height;
     }
 }
