@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.5.7
+## 1.6.0
 - Add default implementation of CanvasElement with basically initialized fields
 - Add default mouse and scroll event streams
 - Add CanvasRenderingContext2D.quadraticCurveTo
