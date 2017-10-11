@@ -245,6 +245,10 @@ class CanvasRenderingContext2D {
   void rotate(num angle){
     throw new UnimplementedError();
   }
+
+  void quadraticCurveTo(num cpx, num cpy, num x, num y){
+    throw new UnimplementedError();
+  }
 }
 
 class CssStyleDeclaration {

@@ -3,6 +3,7 @@
 ## 1.5.7
 - Add default implementation of CanvasElement with basically initialized fields
 - Add default mouse and scroll event streams
+- Add CanvasRenderingContext2D.quadraticCurveTo
 
 ## 1.5.6
 - Add Element.focus()
