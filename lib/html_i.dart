@@ -260,6 +260,7 @@ class Document extends Node {
     Stream<MouseEvent> onMouseMove;
     Stream<MouseEvent> onMouseLeave;
     Stream<MouseEvent> onMouseUp;
+    Stream<Event>      onScroll;
     Stream<WheelEvent> onMouseWheel;
     Stream<Event>      onDoubleClick;
 }
@@ -433,8 +434,8 @@ class CanvasElement extends HtmlElement {
     int width;
     int height;
 
-    CanvasElement({int width, int height, Document ownerDocument}) {
-      if (width != null) width = width;
-      if (height != null) height = height;
+    CanvasElement({int width, int height}) {
+        if (width != null) this.width = width;
+        if (height != null) this.height = height;
     }
 }
