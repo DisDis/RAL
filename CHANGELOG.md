@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.1
+- Add MouseEvent.client
+- Add Element.getBoundingClientRect
+- Add Element.classes
+- Add CssStyleDeclaration.top
+
 ## 1.6.0
 - Add default implementation of CanvasElement with basically initialized fields
 - Add default mouse and scroll event streams
