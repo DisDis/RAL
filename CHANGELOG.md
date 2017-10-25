@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.6.1
+## 1.7.0
 - Add MouseEvent.client
 - Add Element.getBoundingClientRect
 - Add Element.classes
