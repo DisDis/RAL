@@ -232,13 +232,14 @@ class MessageEvent extends Event{
 }
 
 class Element extends Node{
-    Stream<MouseEvent> onMouseDown;
-    Stream<MouseEvent> onMouseMove;
-    Stream<MouseEvent> onMouseLeave;
-    Stream<MouseEvent> onMouseUp;
-    Stream<Event>      onScroll;
-    Stream<WheelEvent> onMouseWheel;
-    Stream<Event>      onDoubleClick;
+    Stream<MouseEvent>    onMouseDown;
+    Stream<MouseEvent>    onMouseMove;
+    Stream<MouseEvent>    onMouseLeave;
+    Stream<MouseEvent>    onMouseUp;
+    Stream<Event>         onScroll;
+    Stream<WheelEvent>    onMouseWheel;
+    Stream<Event>         onDoubleClick;
+    Stream<KeyboardEvent> onKeyDown;
 
     int scrollTop;
     int clientWidth;
@@ -300,6 +301,10 @@ class WheelEvent extends MouseEvent {
     num deltaY;
     num deltaX;
     int deltaMode;
+}
+
+class KeyboardEvent extends UIEvent {
+
 }
 
 class TextMetrics{
