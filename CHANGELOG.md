@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.9.1
+- Fix CanvasRenderingContext2D.globalCompositeOperation added to interface to
+
 ## 1.9.0
 - Add CanvasRenderingContext2D.globalCompositeOperation
 
