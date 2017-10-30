@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.9.0
+- Add CanvasRenderingContext2D.globalCompositeOperation
+
 ## 1.8.0
 - Add KeyboardEvent
 
