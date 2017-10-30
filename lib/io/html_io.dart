@@ -161,6 +161,7 @@ class CanvasRenderingContext2D {
   String lineCap;
   String lineJoin;
   num miterLimit;
+  String globalCompositeOperation;
 
   double backingStorePixelRatio;
 
