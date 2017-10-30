@@ -85,6 +85,7 @@ class MouseEvent extends UIEvent {
   bool altKey;
   bool shiftKey;
   Point screen;
+  Point client;
 }
 
 class WheelEvent extends MouseEvent {
@@ -112,7 +113,13 @@ class Element extends Node{
 
   CssStyleDeclaration style;
 
+  CssClassSet classes = new CssClassSet();
+
   void focus() {
+    throw new UnimplementedError();
+  }
+
+  Rectangle getBoundingClientRect() {
     throw new UnimplementedError();
   }
 }
@@ -255,6 +262,7 @@ class CssStyleDeclaration {
   String width;
   String height;
   String backgroundColor;
+  String top;
 }
 
 class CssClassSet {
@@ -273,7 +281,6 @@ class HtmlElement extends Element {
 class CanvasElement extends HtmlElement {
   CanvasRenderingContext2D context2D = new CanvasRenderingContext2D();
   CssStyleDeclaration style = new CssStyleDeclaration();
-  CssClassSet classes = new CssClassSet();
 
   int width;
   int height;

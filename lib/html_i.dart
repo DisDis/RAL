@@ -232,13 +232,14 @@ class MessageEvent extends Event{
 }
 
 class Element extends Node{
-    Stream<MouseEvent> onMouseDown;
-    Stream<MouseEvent> onMouseMove;
-    Stream<MouseEvent> onMouseLeave;
-    Stream<MouseEvent> onMouseUp;
-    Stream<Event>      onScroll;
-    Stream<WheelEvent> onMouseWheel;
-    Stream<Event>      onDoubleClick;
+    Stream<MouseEvent>    onMouseDown;
+    Stream<MouseEvent>    onMouseMove;
+    Stream<MouseEvent>    onMouseLeave;
+    Stream<MouseEvent>    onMouseUp;
+    Stream<Event>         onScroll;
+    Stream<WheelEvent>    onMouseWheel;
+    Stream<Event>         onDoubleClick;
+    Stream<KeyboardEvent> onKeyDown;
 
     int scrollTop;
     int clientWidth;
@@ -250,7 +251,13 @@ class Element extends Node{
 
     CssStyleDeclaration style;
 
+    CssClassSet classes;
+
     void focus() {
+      throw new UnimplementedError();
+    }
+
+    Rectangle getBoundingClientRect() {
       throw new UnimplementedError();
     }
 }
@@ -287,12 +294,17 @@ class MouseEvent extends UIEvent {
     bool altKey;
     bool shiftKey;
     Point screen;
+    Point client;
 }
 
 class WheelEvent extends MouseEvent {
     num deltaY;
     num deltaX;
     int deltaMode;
+}
+
+class KeyboardEvent extends UIEvent {
+
 }
 
 class TextMetrics{
@@ -418,6 +430,7 @@ class CssStyleDeclaration {
     String width;
     String height;
     String backgroundColor;
+    String top;
 } 
 
 class CssClassSet {
@@ -433,7 +446,6 @@ class CssClassSet {
 class CanvasElement extends HtmlElement {
     CanvasRenderingContext2D context2D;
     CssStyleDeclaration style;
-    CssClassSet classes;
 
     int width;
     int height;
