@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.9.2
+## 1.10.0
 - Add Element.hidden
 
 ## 1.9.1
