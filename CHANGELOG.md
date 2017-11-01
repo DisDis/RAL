@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.9.2
+- Add Element.hidden
+
 ## 1.9.1
 - Fix CanvasRenderingContext2D.globalCompositeOperation added to interface to
 
