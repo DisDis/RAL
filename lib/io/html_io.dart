@@ -110,6 +110,7 @@ class Element extends Node{
   int scrollLeft;
   int scrollHeight;
   int scrollWidth;
+  bool hidden;
 
   CssStyleDeclaration style;
 
