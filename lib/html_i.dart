@@ -433,6 +433,7 @@ class CssStyleDeclaration {
     String height;
     String backgroundColor;
     String top;
+    String letterSpacing;
 } 
 
 class CssClassSet {

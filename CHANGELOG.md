@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.11.0
+- Add CssStyleDeclaration.letterSpacing
+
 ## 1.10.0
 - Add Element.hidden
 
