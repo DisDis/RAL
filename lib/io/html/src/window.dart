@@ -51,4 +51,8 @@ class Location implements interface.Location{
   String get protocol => '';
 
   String get search => '';
+
+  @override
+  void reload() {
+  }
 }
