@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.12.0
+- Add Location.reload()
+
 ## 1.11.0
 - Add CssStyleDeclaration.letterSpacing
 

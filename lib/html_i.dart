@@ -116,6 +116,7 @@ abstract class Location{
   String get protocol;
   String get search;
 
+  void reload();
 }
 
 class HttpRequest {
