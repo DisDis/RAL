@@ -19,6 +19,8 @@ class Window implements interface.Window {
 
   interface.Storage get sessionStorage => new Storage();
 
+  interface.Document get document => null;
+
   void open(String url, String target, [String features]) => null;
 
   @override

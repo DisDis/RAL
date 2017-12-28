@@ -15,6 +15,8 @@ abstract class Window{
   double devicePixelRatio;
   Stream<Event> onResize;
 
+  Document get document;
+
   Future<num> get animationFrame => new Future.value(0);
 
 
@@ -232,6 +234,14 @@ class MessageEvent extends Event{
   EventTarget get source => null;
 }
 
+class NodeValidator {
+
+}
+
+class NodeTreeSanitizer {
+  static const NodeTreeSanitizer trusted = null;
+}
+
 class Element extends Node{
     Stream<MouseEvent>    onMouseDown;
     Stream<MouseEvent>    onMouseMove;
@@ -262,6 +272,15 @@ class Element extends Node{
     Rectangle getBoundingClientRect() {
       throw new UnimplementedError();
     }
+
+    void setInnerHtml(String html) {
+      throw new UnimplementedError();
+    }
+
+    void appendHtml(String text,
+        {NodeValidator validator, NodeTreeSanitizer treeSanitizer}) {
+      throw new UnimplementedError();
+    }
 }
 
 class Document extends Node {
@@ -272,6 +291,10 @@ class Document extends Node {
     Stream<Event>      onScroll;
     Stream<WheelEvent> onMouseWheel;
     Stream<Event>      onDoubleClick;
+
+    List<Node> getElementsByTagName(String name) {
+      throw new UnimplementedError();
+    }
 }
 
 class Node{

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.13.0
+- Add Window.document, Element.setInnerHtml, Element.appendHtml, Document.getElementsByTagName 
+
 ## 1.12.0
 - Add Location.reload()
 
