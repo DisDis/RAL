@@ -94,6 +94,14 @@ class WheelEvent extends MouseEvent {
   int deltaMode;
 }
 
+class NodeValidator {
+
+}
+
+class NodeTreeSanitizer {
+  static const trusted = null;
+}
+
 class Element extends Node{
   Stream<MouseEvent> onMouseDown = new StreamController<MouseEvent>.broadcast(sync: true).stream;
   Stream<MouseEvent> onMouseMove = new StreamController<MouseEvent>.broadcast(sync: true).stream;
@@ -123,6 +131,15 @@ class Element extends Node{
   Rectangle getBoundingClientRect() {
     throw new UnimplementedError();
   }
+
+  void setInnerHtml(String html) {
+    throw new UnimplementedError();
+  }
+
+  void appendHtml(String text,
+      {NodeValidator validator, NodeTreeSanitizer treeSanitizer}) {
+    throw new UnimplementedError();
+  }
 }
 
 class Node{
@@ -137,6 +154,10 @@ class Document extends Node {
   Stream<Event>      onScroll = new StreamController<Event>.broadcast(sync: true).stream;
   Stream<WheelEvent> onMouseWheel = new StreamController<WheelEvent>.broadcast(sync: true).stream;
   Stream<Event>      onDoubleClick = new StreamController<Event>.broadcast(sync: true).stream;
+
+  List<Node> getElementsByTagName(String name) {
+    throw new UnimplementedError();
+  }
 }
 
 class EventTarget {
