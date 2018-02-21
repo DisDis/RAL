@@ -453,7 +453,9 @@ class CanvasRenderingContext2D {
 class HtmlElement extends Element {
 }
 
-class IFrameElement extends HtmlElement {}
+class IFrameElement extends HtmlElement {
+  String src;
+}
  
 class CssStyleDeclaration {
     String width;
@@ -461,7 +463,8 @@ class CssStyleDeclaration {
     String backgroundColor;
     String top;
     String letterSpacing;
-} 
+    String display;
+}
 
 class CssClassSet {
     bool remove(Object value){
