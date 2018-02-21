@@ -3,6 +3,7 @@ library platform.interface.html;
 import 'dart:async';
 import 'dart:math';
 Window get window => null;
+Document get document => null;
 
 Element querySelector(String selectors){
    throw new UnimplementedError();
@@ -291,7 +292,7 @@ class Document extends Node {
     Stream<Event>      onScroll;
     Stream<WheelEvent> onMouseWheel;
     Stream<Event>      onDoubleClick;
-
+    HtmlElement body;
     List<Node> getElementsByTagName(String name) {
       throw new UnimplementedError();
     }
@@ -299,6 +300,9 @@ class Document extends Node {
 
 class Node{
     Document ownerDocument;
+    Node append(Node node) {
+      throw new UnimplementedError();
+    }
 }
 
 class EventTarget {
@@ -451,6 +455,10 @@ class CanvasRenderingContext2D {
 
 class HtmlElement extends Element {
 }
+
+class IFrameElement extends HtmlElement {
+  String src;
+}
  
 class CssStyleDeclaration {
     String width;
@@ -458,15 +466,192 @@ class CssStyleDeclaration {
     String backgroundColor;
     String top;
     String letterSpacing;
-} 
+    String display;
+}
 
-class CssClassSet {
+class CssClassSet implements Set<String> {
     bool remove(Object value){
         throw new UnimplementedError();    
     }
 
-    bool add(String value){
-        throw new UnimplementedError();    
+    bool add(String value) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    void addAll(Iterable<String> elements) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    bool any(bool f(String element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    void clear() {
+      throw new UnimplementedError();
+    }
+
+    @override
+    bool contains(Object value) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    bool containsAll(Iterable<Object> other) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Set<String> difference(Set<Object> other) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    String elementAt(int index) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    bool every(bool f(String element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Iterable<T> expand<T>(Iterable<T> f(element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    String get first => null;
+
+    @override
+    String firstWhere(bool test(String element), {String orElse()}) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    T fold<T>(T initialValue, T combine(T previousValue, element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    void forEach(void f(String element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Set<String> intersection(Set<Object> other) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    bool get isEmpty => null;
+
+    @override
+    bool get isNotEmpty => null;
+
+    @override
+    Iterator<String> get iterator => null;
+
+    @override
+    String join([String separator = ""]) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    String get last => null;
+
+    @override
+    String lastWhere(bool test(String element), {String orElse()}) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    int get length => null;
+
+    @override
+    String lookup(Object object) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Iterable<T> map<T>(T f(e)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    String reduce(String combine(String value, String element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    void removeAll(Iterable<Object> elements) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    void removeWhere(bool test(String element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    void retainAll(Iterable<Object> elements) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    void retainWhere(bool test(String element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    String get single => null;
+
+    @override
+    String singleWhere(bool test(String element)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Iterable<String> skip(int count) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Iterable<String> skipWhile(bool test(String value)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Iterable<String> take(int count) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Iterable<String> takeWhile(bool test(String value)) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    List<String> toList({bool growable: true}) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Set<String> toSet() {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Set<String> union(Set<String> other) {
+      throw new UnimplementedError();
+    }
+
+    @override
+    Iterable<String> where(bool test(String element)) {
+      throw new UnimplementedError();
     }
 }
 
