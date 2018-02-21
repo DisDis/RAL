@@ -300,6 +300,9 @@ class Document extends Node {
 
 class Node{
     Document ownerDocument;
+    Node append(Node node) {
+      throw new UnimplementedError();
+    }
 }
 
 class EventTarget {
