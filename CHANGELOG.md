@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.14.0
+- Add Document.body,Node.append(), IFrameElement, CssStyleDeclaration.display, CssClassSet implements  Set<String>
+
 ## 1.13.0
 - Add Window.document, Element.setInnerHtml, Element.appendHtml, Document.getElementsByTagName 
 
