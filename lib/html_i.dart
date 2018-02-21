@@ -292,7 +292,7 @@ class Document extends Node {
     Stream<Event>      onScroll;
     Stream<WheelEvent> onMouseWheel;
     Stream<Event>      onDoubleClick;
-
+    HtmlElement body;
     List<Node> getElementsByTagName(String name) {
       throw new UnimplementedError();
     }
