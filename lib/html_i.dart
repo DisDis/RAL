@@ -3,6 +3,7 @@ library platform.interface.html;
 import 'dart:async';
 import 'dart:math';
 Window get window => null;
+Document get document => null;
 
 Element querySelector(String selectors){
    throw new UnimplementedError();
