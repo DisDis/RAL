@@ -451,6 +451,8 @@ class CanvasRenderingContext2D {
 
 class HtmlElement extends Element {
 }
+
+class IFrameElement extends HtmlElement {}
  
 class CssStyleDeclaration {
     String width;
