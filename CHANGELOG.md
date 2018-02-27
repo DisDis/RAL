@@ -1,3 +1,6 @@
+##1.15.0
+- Add window.navigator, evt.metaKey for both MouseEvent and KeyboardEvent, evt.ctrlKey for KeyboardEvent
+
 # Changelog
 
 ## 1.14.0
