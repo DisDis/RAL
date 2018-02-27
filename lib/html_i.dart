@@ -330,6 +330,7 @@ class MouseEvent extends UIEvent {
   bool shiftKey;
   Point screen;
   Point client;
+  int button;
 }
 
 class WheelEvent extends MouseEvent {
