@@ -1,4 +1,6 @@
 # Changelog
+## 1.16.0
+- Add Document.onClick and Element.onClick
 
 ## 1.15.0
 - Add window.navigator, evt.metaKey for both MouseEvent and KeyboardEvent, evt.ctrlKey for KeyboardEvent, and evt.button for MouseEvent

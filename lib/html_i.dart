@@ -253,6 +253,7 @@ class Element extends Node{
   Stream<MouseEvent>    onMouseMove;
   Stream<MouseEvent>    onMouseLeave;
   Stream<MouseEvent>    onMouseUp;
+  Stream<MouseEvent>    onClick;
   Stream<Event>         onScroll;
   Stream<WheelEvent>    onMouseWheel;
   Stream<Event>         onDoubleClick;
@@ -294,6 +295,7 @@ class Document extends Node {
   Stream<MouseEvent> onMouseMove;
   Stream<MouseEvent> onMouseLeave;
   Stream<MouseEvent> onMouseUp;
+  Stream<MouseEvent> onClick;
   Stream<Event>      onScroll;
   Stream<WheelEvent> onMouseWheel;
   Stream<Event>      onDoubleClick;
