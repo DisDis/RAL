@@ -1,3 +1,7 @@
+MINOR
+- Add http adaptor server implementation
+
+
 # Changelog
 ## 1.16.0
 - Add Document.onClick and Element.onClick
