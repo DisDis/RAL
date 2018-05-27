@@ -1,8 +1,7 @@
-MINOR
-- Add http adaptor server implementation
-
-
 # Changelog
+## 1.17.0
+- Add file and blob classes to use in server http adapter implementation
+
 ## 1.16.0
 - Add Document.onClick and Element.onClick
 

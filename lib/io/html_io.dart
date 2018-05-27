@@ -316,12 +316,11 @@ class CanvasElement extends HtmlElement {
   }
 }
 
-abstract class File {
-  String get name;
-  int get size;
-}
-
 abstract class Blob {
   int get size;
   String get type;
+}
+
+abstract class File extends Blob {
+  String get name;
 }
