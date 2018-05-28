@@ -315,3 +315,12 @@ class CanvasElement extends HtmlElement {
     if (height != null) this.height = height;
   }
 }
+
+abstract class Blob {
+  int get size;
+  String get type;
+}
+
+abstract class File extends Blob {
+  String get name;
+}
