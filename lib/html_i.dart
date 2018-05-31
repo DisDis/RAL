@@ -258,6 +258,7 @@ class Element extends Node{
   Stream<WheelEvent>    onMouseWheel;
   Stream<Event>         onDoubleClick;
   Stream<KeyboardEvent> onKeyDown;
+  Stream<KeyboardEvent> onKeyUp;
 
   int scrollTop;
   int clientWidth;

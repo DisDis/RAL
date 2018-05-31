@@ -1,4 +1,8 @@
 # Changelog
+
+## 1.18.0
+- Add Element.onKeyUp
+
 ## 1.17.0
 - Add file and blob classes to use in server http adapter implementation
 
