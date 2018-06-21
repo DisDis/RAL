@@ -1,7 +1,22 @@
 # Changelog
 
-## 1.14.0
+## 1.19.0
 - Add return type to window.open()
+
+## 1.18.0
+- Add Element.onKeyUp
+
+## 1.17.0
+- Add file and blob classes to use in server http adapter implementation
+
+## 1.16.0
+- Add Document.onClick and Element.onClick
+
+## 1.15.0
+- Add window.navigator, evt.metaKey for both MouseEvent and KeyboardEvent, evt.ctrlKey for KeyboardEvent, and evt.button for MouseEvent
+
+## 1.14.0
+- Add Document.body,Node.append(), IFrameElement, CssStyleDeclaration.display, CssClassSet implements  Set<String>
 
 ## 1.13.0
 - Add Window.document, Element.setInnerHtml, Element.appendHtml, Document.getElementsByTagName 

@@ -12,8 +12,11 @@ class Window implements interface.Window {
   Window._internal();
 
   static final interface.Location _location = new Location();
+  static final interface.Navigator _navigator = new Navigator();
 
   interface.Location location = _location;
+
+  Navigator get navigator => _navigator;
 
   interface.Storage get localStorage => new Storage();
 
@@ -34,6 +37,11 @@ class Window implements interface.Window {
   // TODO: implement animationFrame
   @override
   Future<num> get animationFrame => null;
+}
+
+class Navigator implements interface.Navigator {
+
+  String get userAgent => '';
 }
 
 class Location implements interface.Location{
