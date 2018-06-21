@@ -13,7 +13,7 @@ class Window implements interface.Window {
 
   static final interface.Location _location = new Location();
 
-  Location get location => _location;
+  interface.Location location = _location;
 
   interface.Storage get localStorage => new Storage();
 
@@ -21,7 +21,9 @@ class Window implements interface.Window {
 
   interface.Document get document => null;
 
-  void open(String url, String target, [String features]) => null;
+  interface.Window opener;
+
+  Window open(String url, String target, [String features]) => null;
 
   @override
   double devicePixelRatio;
@@ -42,7 +44,7 @@ class Location implements interface.Location{
 
   String get hostname => '';
 
-  String get href => '';
+  String href = '';
 
   String get origin =>'';
 

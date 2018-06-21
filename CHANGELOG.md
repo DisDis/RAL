@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.14.0
+- Add return type to window.open()
+
 ## 1.13.0
 - Add Window.document, Element.setInnerHtml, Element.appendHtml, Document.getElementsByTagName 
 
