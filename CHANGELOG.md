@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.19.0
+- Add return type to window.open()
+
 ## 1.18.0
 - Add Element.onKeyUp
 

@@ -12,17 +12,18 @@ Element querySelector(String selectors){
 abstract class Window{
   Storage get localStorage;
   Storage get sessionStorage;
-  Location get location;
+  Location location;
   Navigator get navigator;
   double devicePixelRatio;
   Stream<Event> onResize;
+  Window opener;
 
   Document get document;
 
   Future<num> get animationFrame => new Future.value(0);
 
 
-  void open(String url, String target, [String features]);
+  Window open(String url, String target, [String features]);
 }
 
 abstract class Storage implements Map<String, String> {
@@ -117,7 +118,7 @@ abstract class Location{
   String get hash;
   String get host;
   String get hostname;
-  String get href;
+  String href;
   String get origin;
   String get pathname;
   String get port;
