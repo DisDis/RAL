@@ -346,6 +346,8 @@ class WheelEvent extends MouseEvent {
 class KeyboardEvent extends UIEvent {
   bool ctrlKey;
   bool metaKey;
+  bool altKey;
+  bool shiftKey;
   int keyCode;
 }
 
