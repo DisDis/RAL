@@ -691,6 +691,9 @@ class AnchorElement extends HtmlElement {
   String href;
   String target;
   String rel;
+
+  AnchorElement();
+
 }
 
 abstract class KeyCode {
