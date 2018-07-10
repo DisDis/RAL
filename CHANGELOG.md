@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.20.0
+- Add alt/shift-keys flags and keyCode field to keyboard event
+
 ## 1.19.0
 - Add return type to window.open()
 
