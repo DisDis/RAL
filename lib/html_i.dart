@@ -278,6 +278,10 @@ class Element extends Node{
     throw new UnimplementedError();
   }
 
+  void click() {
+    throw new UnimplementedError();
+  }
+
   Rectangle getBoundingClientRect() {
     throw new UnimplementedError();
   }
@@ -681,6 +685,12 @@ class CanvasElement extends HtmlElement {
     if (width != null) this.width = width;
     if (height != null) this.height = height;
   }
+}
+
+class AnchorElement extends HtmlElement {
+  String href;
+  String target;
+  String rel;
 }
 
 abstract class KeyCode {
