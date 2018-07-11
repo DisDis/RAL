@@ -1,4 +1,6 @@
 # Changelog
+## 1.21.0
+- Add AnchorElement and Element.click()
 
 ## 1.20.0
 - Add alt/shift-keys flags and keyCode field to keyboard event
