@@ -1,6 +1,6 @@
 # Changelog
 ## 1.22.0
-- Add Element .parent, .tagName; add CssDeclaration .overflowX/Y
+- Add Node.parent, Element.tagName; add CssDeclaration .overflowX/Y
 
 ## 1.21.0
 - Add AnchorElement and Element.click()
