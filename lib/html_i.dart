@@ -274,7 +274,6 @@ class Element extends Node{
 
   CssClassSet classes;
 
-  Element parent;
   String tagName;
 
   void focus() {
@@ -316,6 +315,7 @@ class Document extends Node {
 
 class Node{
   Document ownerDocument;
+  Element parent;
   Node append(Node node) {
     throw new UnimplementedError();
   }
