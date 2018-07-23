@@ -274,6 +274,9 @@ class Element extends Node{
 
   CssClassSet classes;
 
+  Element parent;
+  String tagName;
+
   void focus() {
     throw new UnimplementedError();
   }
@@ -486,6 +489,8 @@ class CssStyleDeclaration {
   String top;
   String letterSpacing;
   String display;
+  String overflowX;
+  String overflowY;
 }
 
 class CssClassSet implements Set<String> {
