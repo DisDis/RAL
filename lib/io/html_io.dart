@@ -111,6 +111,7 @@ class Element extends Node{
   Stream<Event>      onScroll = new StreamController<Event>.broadcast(sync: true).stream;
   Stream<WheelEvent> onMouseWheel = new StreamController<WheelEvent>.broadcast(sync: true).stream;
   Stream<Event>      onDoubleClick = new StreamController<Event>.broadcast(sync: true).stream;
+  Stream<Event>      onContextMenu = new StreamController<MouseEvent>.broadcast(sync: true).stream;
 
   int scrollTop;
   int clientWidth;

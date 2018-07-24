@@ -260,6 +260,7 @@ class Element extends Node{
   Stream<Event>         onDoubleClick;
   Stream<KeyboardEvent> onKeyDown;
   Stream<KeyboardEvent> onKeyUp;
+  Stream<MouseEvent>    onContextMenu;
 
   int scrollTop;
   int clientWidth;
