@@ -1,4 +1,8 @@
 # Changelog
+
+## 1.23.0 [24.07.2018]
+- Add Element.onContextMenu
+
 ## 1.22.0
 - Add Node.parent, Element.tagName; add CssDeclaration .overflowX/Y
 
