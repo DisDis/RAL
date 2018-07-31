@@ -156,6 +156,10 @@ class Element extends Node{
       {NodeValidator validator, NodeTreeSanitizer treeSanitizer}) {
     throw new UnimplementedError();
   }
+
+  CssStyleDeclaration getComputedStyle() {
+    throw new UnimplementedError();
+  }
 }
 
 class Node{
