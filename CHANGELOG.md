@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.25.0
+- Add Element.getComputedStyle method
+
 ## 1.24.0
 - Add impl for io 
 
