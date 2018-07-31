@@ -94,6 +94,14 @@ class WheelEvent extends MouseEvent {
   int deltaMode;
 }
 
+class KeyboardEvent extends UIEvent {
+  bool ctrlKey;
+  bool metaKey;
+  bool altKey;
+  bool shiftKey;
+  int keyCode;
+}
+
 class NodeValidator {
 
 }
@@ -111,6 +119,8 @@ class Element extends Node{
   Stream<Event>      onScroll = new StreamController<Event>.broadcast(sync: true).stream;
   Stream<WheelEvent> onMouseWheel = new StreamController<WheelEvent>.broadcast(sync: true).stream;
   Stream<Event>      onDoubleClick = new StreamController<Event>.broadcast(sync: true).stream;
+  Stream<KeyboardEvent> onKeyDown = new StreamController<KeyboardEvent>.broadcast(sync: true).stream;
+  Stream<KeyboardEvent> onKeyUp = new StreamController<KeyboardEvent>.broadcast(sync: true).stream;
   Stream<Event>      onContextMenu = new StreamController<MouseEvent>.broadcast(sync: true).stream;
 
   int scrollTop;
@@ -293,6 +303,10 @@ class CssStyleDeclaration {
   String height;
   String backgroundColor;
   String top;
+  String letterSpacing;
+  String display;
+  String overflowX;
+  String overflowY;
 }
 
 class CssClassSet {

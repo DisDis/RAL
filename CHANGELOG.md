@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.24.0
+- Add impl for io 
+
 ## 1.23.0 [24.07.2018]
 - Add Element.onContextMenu
 
