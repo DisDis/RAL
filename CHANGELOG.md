@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.26.0
+- Changed onContextMenu type
+- Added metaKey for MouseEvent
+
 ## 1.25.0
 - Add Element.getComputedStyle method
 
