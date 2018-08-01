@@ -82,6 +82,7 @@ class UIEvent extends Event {
 class MouseEvent extends UIEvent {
   Point offset;
   bool ctrlKey;
+  bool metaKey;
   bool altKey;
   bool shiftKey;
   Point screen;
@@ -121,7 +122,7 @@ class Element extends Node{
   Stream<Event>      onDoubleClick = new StreamController<Event>.broadcast(sync: true).stream;
   Stream<KeyboardEvent> onKeyDown = new StreamController<KeyboardEvent>.broadcast(sync: true).stream;
   Stream<KeyboardEvent> onKeyUp = new StreamController<KeyboardEvent>.broadcast(sync: true).stream;
-  Stream<Event>      onContextMenu = new StreamController<MouseEvent>.broadcast(sync: true).stream;
+  Stream<MouseEvent> onContextMenu = new StreamController<MouseEvent>.broadcast(sync: true).stream;
 
   int scrollTop;
   int clientWidth;
