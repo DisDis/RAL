@@ -1,4 +1,6 @@
 # Changelog
+## 1.27.0
+- Added onKeyDown / onKeyUp for Document
 
 ## 1.26.0
 - Changed onContextMenu type
