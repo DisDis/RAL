@@ -172,6 +172,8 @@ class Document extends Node {
   Stream<MouseEvent> onMouseMove = new StreamController<MouseEvent>.broadcast(sync: true).stream;
   Stream<MouseEvent> onMouseLeave = new StreamController<MouseEvent>.broadcast(sync: true).stream;
   Stream<MouseEvent> onMouseUp = new StreamController<MouseEvent>.broadcast(sync: true).stream;
+  Stream<KeyboardEvent> onKeyDown = new StreamController<KeyboardEvent>.broadcast(sync: true).stream;
+  Stream<KeyboardEvent> onKeyUp = new StreamController<KeyboardEvent>.broadcast(sync: true).stream;
   Stream<MouseEvent> onClick = new StreamController<MouseEvent>.broadcast(sync: true).stream;
   Stream<Event>      onScroll = new StreamController<Event>.broadcast(sync: true).stream;
   Stream<WheelEvent> onMouseWheel = new StreamController<WheelEvent>.broadcast(sync: true).stream;

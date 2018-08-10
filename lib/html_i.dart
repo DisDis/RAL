@@ -308,6 +308,8 @@ class Document extends Node {
   Stream<MouseEvent> onMouseMove;
   Stream<MouseEvent> onMouseLeave;
   Stream<MouseEvent> onMouseUp;
+  Stream<KeyboardEvent> onKeyDown;
+  Stream<KeyboardEvent> onKeyUp;
   Stream<MouseEvent> onClick;
   Stream<Event>      onScroll;
   Stream<WheelEvent> onMouseWheel;
