@@ -163,7 +163,7 @@ class Element extends Node{
   }
 }
 
-class Node{
+class Node extends EventTarget{
   Document ownerDocument;
 }
 
@@ -185,7 +185,15 @@ class Document extends Node {
 }
 
 class EventTarget {
+  void addEventListener(String type, EventListener listener,
+      [bool useCapture]) {
+    throw new UnimplementedError();
+  }
 
+  void removeEventListener(String type, EventListener listener,
+      [bool useCapture]) {
+    throw new UnimplementedError();
+  }
 }
 
 class TextMetrics{
@@ -356,3 +364,5 @@ abstract class Blob {
 abstract class File extends Blob {
   String get name;
 }
+
+typedef EventListener(Event event);

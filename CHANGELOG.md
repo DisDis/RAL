@@ -1,4 +1,7 @@
 # Changelog
+## 1.28.0
+- Add EventTarget.addEventListener method
+
 ## 1.27.0
 - Added onKeyDown / onKeyUp for Document
 

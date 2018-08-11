@@ -320,7 +320,7 @@ class Document extends Node {
   }
 }
 
-class Node{
+class Node extends EventTarget {
   Document ownerDocument;
   Element parent;
   Node append(Node node) {
@@ -329,7 +329,15 @@ class Node{
 }
 
 class EventTarget {
+  void addEventListener(String type, EventListener listener,
+      [bool useCapture]) {
+    throw new UnimplementedError();
+  }
 
+  void removeEventListener(String type, EventListener listener,
+      [bool useCapture]) {
+    throw new UnimplementedError();
+  }
 }
 
 class MessagePort extends EventTarget {
@@ -834,3 +842,5 @@ abstract class KeyCode {
 
   static const int UNKNOWN = -1;
 }
+
+typedef EventListener(Event event);
