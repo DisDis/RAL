@@ -17,7 +17,8 @@ abstract class Window{
   double devicePixelRatio;
   Stream<Event> onResize;
   Window opener;
-
+  int get innerWidth;
+  int get innerHeight;
   Document get document;
 
   Future<num> get animationFrame => new Future.value(0);

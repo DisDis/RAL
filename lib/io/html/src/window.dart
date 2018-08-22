@@ -26,6 +26,10 @@ class Window implements interface.Window {
 
   interface.Window opener;
 
+  int get innerWidth => 0;
+
+  int get innerHeight => 0;
+
   Window open(String url, String target, [String features]) => null;
 
   @override
