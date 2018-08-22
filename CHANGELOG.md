@@ -1,4 +1,7 @@
 # Changelog
+## 1.20.0
+- Add Window.innerWidth and Window.innerHeight
+
 ## 1.28.0
 - Add EventTarget.addEventListener method
 
