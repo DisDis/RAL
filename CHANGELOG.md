@@ -1,5 +1,5 @@
 # Changelog
-## 1.20.0
+## 1.29.0
 - Add Window.innerWidth and Window.innerHeight
 
 ## 1.28.0
