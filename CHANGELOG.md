@@ -1,4 +1,8 @@
 # Changelog
+
+## 1.30.0
+- Add KeyCode to implementation
+
 ## 1.29.0
 - Add Window.innerWidth and Window.innerHeight
 
